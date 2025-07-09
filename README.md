@@ -1,6 +1,6 @@
 # ONOperas
 
-A Julia package to scrape and format a CSV of opera premieres from **Opening Night! Opera & Oratorio Premieres**, compiled by Stanford University Libraries- with permission. 
+A Julia package to scrape and format a CSV of opera premieres from **Opening Night! Opera & Oratorio Premieres**, compiled by Stanford University Libraries- with permission. This serves as an API for the database, since there is no option on the website to download or export the data. The database can be access at: https://exhibits.stanford.edu/operadata .
 
 ---
 
@@ -53,11 +53,8 @@ Fetches metadata for opera premieres listed under each URL in `base_urls`, itera
 
 ### `last4(s::AbstractString) -> SubString`
 
-Returns the year of Premiere. This is essentially because in some cases (rare), year might have season or other string before the year data. This measure allows us to get the year, which can be used as numeric. 
+Returns the year of Premiere. This is essentially because in some cases (rare), year might have season or other string before the year data. This allows us to get the year, which can be converted to numeric. 
 
----
-
-Missing Fields are left blank.
 ---
 
 ## License
